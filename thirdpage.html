@@ -2,12 +2,93 @@
 
 <html>
 
-<head>
+<style>
 
+body {
+	background-color: green;
+}
+
+p {
+	font-family: verdana;
+	font-size: 15px;
+	color: white;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: lightgrey;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav. Basically set the top-left of the page */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Styles involving the title */
+.topTitle h1{
+  color: green;
+  text-align: right;
+}
+
+.topTitle{
+  background-color: black;
+  font-family: Calibri;
+  font-size: 26px;
+}
+
+</style>
+
+<head>
+<title>Innovation</title>
 </head>
 
-<body>
-<p>testing</p>
-</body>
+<!-- Sidebar -->
+<div class="sidenav">
+  <a href="https://manant1299.github.io/">Home page</a>
+  <a href="secondpage">Propagation</a>
+  <a href="thirdpage">Innovation</a>
+</div>
 
+<!--topbar-->
+<div class="topTitle">
+	<h1>Innovation</h1>
+</div>
+
+<div class="main">
+
+<body>
+
+<p>testing
+</p>
+
+<p>testing
+</p>
+
+</body>
+</div>
 </html>
